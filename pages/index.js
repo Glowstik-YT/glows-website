@@ -10,16 +10,13 @@ export default function Home() {
     <div>
       <section className='main'>
         <div className="wrapper">
-          <a href="/">
             <div className="None">
               <h1 className="Logo anim-typewriter">{string}</h1>        
             </div> 
-          </a>
-
           <div className='flex-box'>
-            <a href="https://github.com/Glowstik-YT"><button className="git" >GitHub</button></a>
-            <a href="https://bit.ly/Glowstik" className="button" ><button className="yt" >Youtube</button></a>
-            <a href="http://discord.gg/z2zfZMwemk" className="button" ><button className="discord" >Discord</button></a>
+            <a href="https://github.com/Glowstik-YT"><button className="git" id='button'>GitHub</button></a>
+            <a href="https://youtube.com/Glowstik" className="button" ><button className="yt"  id='button'>Youtube</button></a>
+            <a href="http://discord.gg/z2zfZMwemk" className="button" ><button className="discord"  id='button'>Discord</button></a>
           </div>
         </div>
       </section>
@@ -31,14 +28,16 @@ export default function Home() {
       <center>
           <div className='abtContainer'>
               <h1 className="abtTitle">About Me</h1>
-              <p>Hi! I'm glowstik but most people refer to me as Glow, I am a Student, Developer, and Youtuber. I am currently proficant in 3 languages and 3 frameworks. I am currently learning 2 languages including Java and C++. My youtube channel currently has 103 subscribers which to others is really not that much but to me it means a lot. I make videos on Discord Bot creation and am in the middle of creating a public bot right now called "Chill". If you want to know more about that you can always dm me on discord or shoot me an email. If you have business inquries be sure to email me and I will get back to you as soon as possible. Anyways thats all about me (mah lifes pretty boring). </p>
+              <p>Hi! I'm glowstik but most people refer to me as Glow, I am a Student, Developer, and Youtuber. I am currently proficant in 3 languages and 3 frameworks. Along with that I am learning 2 languages including Java and C++. My youtube channel currently has 153 subscribers which to others is really not that much but to me it means a lot. I make videos on Discord Bot creation and am in the middle of creating a public bot right now called "Chill". If you want to know more about that you can always dm me on discord or shoot me an email. If you have business inquries be sure to email me and I will get back to you as soon as possible. Anyways thats all about me (mah lifes pretty boring). </p>
               <h3><strong>Contact Info</strong></h3>
               <p>Discord: <strong>{username}</strong></p>
-              <p>Email: <strong>Glowstik728@gmail.com</strong></p>
           </div>
           <br />
-          <br />
-          <br />
+          <div className='projectContainer'>
+              <h1 className='abtTitle'>Projects</h1>
+              <a href="/glow"><button className="lang" >Glow</button></a>
+              <a href="https://discord.com/api/oauth2/authorize?client_id=800129024441188382&permissions=1610350327&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fcallback&scope=bot" className="button" ><button className="chill" >Chill Bot</button></a>
+          </div>
         </center>
       </section>
 
@@ -66,7 +65,7 @@ export default function Home() {
       .abtTitle{
         font-size: 35px;
       }
-      button {
+      #button {
         margin-top: 65px;
       }
       .button{
@@ -74,20 +73,20 @@ export default function Home() {
       }
       .git{
         border: 3px solid #fff;
-        background-color: #141414;
+        background-color: #fff;
         border-radius: 45px;
-        color: #fff;
+        color: #141414;
         width: 200px;
         height: 50px;
         font-size: 20px;
-        padding-left: 15px;
+        padding-left: 17px;
         transition: 0.7s;
       }
       .yt{
-        border: 3px solid #e41234;
-        background-color: #141414;
+        border: 3px solid #fff;
+        background-color: #fff;
         border-radius: 45px;
-        color: #fff;
+        color: #e41234;
         width: 200px;
         height: 50px;
         font-size: 20px;
@@ -95,7 +94,29 @@ export default function Home() {
         transition: 0.7s;
       }
       .discord{
-        border: 3px solid #5b84b1;
+        border: 3px solid #fff;
+        background-color: #fff;
+        border-radius: 45px;
+        color: #5b84b1;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        padding-left: 15px;
+        transition: 0.7s;
+      }
+      .lang{
+        border: 3px solid #141414;
+        background-color: #141414;
+        border-radius: 45px;
+        color: #7e0eed;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        padding-left: 15px;
+        transition: 0.7s;
+      }
+      .chill{
+        border: 3px solid #141414;
         background-color: #141414;
         border-radius: 45px;
         color: #fff;
@@ -106,20 +127,63 @@ export default function Home() {
         transition: 0.7s;
       }
       .git:hover{
-        box-shadow: 3px 3px 3px #2f2f2f;
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12)
+        ;
         background-color: #fff;
         border: 3px solid #1f1f1;
         color: #1f1f1f;
         cursor: pointer; 
       }
+      .lang:hover{
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12)
+        ;
+        cursor: pointer; 
+      }
+      .chill:hover{
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12)
+        ;
+        cursor: pointer; 
+      }
       .yt:hover{
-        box-shadow: 3px 3px 3px #2f2f2f;
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12)
+        ;
         background-color: #fff;
         color: #e41234;
         cursor: pointer;
       }
       .discord:hover{
-        box-shadow: 3px 3px 3px #2f2f2f;
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+      ;
         background-color: #fff;
         color: #5b84b1;
         cursor: pointer;
@@ -158,14 +222,14 @@ export default function Home() {
         }
 
         #aboutMe {
-          height: 60vh;
+          height: 70vh;
         }
 
         .wrapper {
           width: 100%;
           height: 100%;
           position: absolute;
-          background: linear-gradient(45deg,#eb1c63, #349cdc);
+          background: linear-gradient(45deg,#00e004, #17aaff);
           background-size: 600% 100%;
           animation: gradient 5s linear infinite;
           animation-direction: alternate;
