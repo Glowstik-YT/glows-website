@@ -28,7 +28,7 @@ export default function Home() {
       <center>
           <div className='abtContainer'>
               <h1 className="abtTitle">About Me</h1>
-              <p>Hi! I'm glowstik but most people refer to me as Glow, I am a Student, Developer, and Youtuber. I am currently proficant in 3 languages and 3 frameworks. Along with that I am learning 2 languages including Java and C++. My youtube channel currently has 153 subscribers which to others is really not that much but to me it means a lot. I make videos on Discord Bot creation and am in the middle of creating a public bot right now called "Chill". If you want to know more about that you can always dm me on discord or shoot me an email. If you have business inquries be sure to email me and I will get back to you as soon as possible. Anyways thats all about me (mah lifes pretty boring). </p>
+              <p>Hi! I'm glowstik but most people refer to me as Glow, I am a Student, Developer, and Youtuber. I am currently proficant in 3 languages and 3 frameworks. Along with that I am learning 2 languages including Java and C++. My youtube channel currently has 200ish subscribers which to others is really not that much but to me it means a lot. I make videos on Discord Bot creation and am in the middle of creating a public bot right now called "Chill". If you want to know more about that you can always dm me on discord or shoot me an email. If you have business inquries be sure to email me and I will get back to you as soon as possible. Anyways thats all about me (mah lifes pretty boring). </p>
               <h3><strong>Contact Info</strong></h3>
               <p>Discord: <strong>{username}</strong></p>
           </div>
