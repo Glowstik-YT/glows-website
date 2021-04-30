@@ -20,8 +20,8 @@ export default function lang() {
             <a href="https://cdn.discordapp.com/attachments/830088075010637835/830516378851213332/Glow_Setup.exe">
               <button className="download" id='button'>Glow v1.0</button>
             </a>
-            <a href="#">
-              <button className="download" id='button'>Coming soon</button>
+            <a href="https://github.com/Glowstik-YT/.glow/blob/main/README.md">
+              <button className="download" id='button'>Docs</button>
             </a>
             <a href="/">
               <button className="download" id='button'>Go Back</button>
