@@ -13,7 +13,7 @@ export default function Home() {
       <meta property="og:url" content="https://glowstik.ml/" />
       <meta property="og:image" content="https://media.discordapp.net/attachments/771821245292609556/837489485797261322/Untitled_5.png?width=452&height=452" />
       <meta property="og:description" content="Youtuber, Student, Developer" />
-      <meta name="theme-color" content="#141414">
+      <meta name="theme-color" content="#141414" />
     </Head>
     <div>
       <section className='main'>
