@@ -7,14 +7,14 @@ const username = 'Glowstikk#5127'
 
 export default function Home() {
   return (
-    <Head>
-      <meta property="og:title" content="Glowstik" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://glowstik.ml/" />
-      <meta property="og:image" content="https://media.discordapp.net/attachments/771821245292609556/837489485797261322/Untitled_5.png?width=452&height=452" />
-      <meta property="og:description" content="Youtuber, Student, Developer" />
-    </Head>
     <div>
+      <Head>
+        <meta property="og:title" content="Glowstik" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://glowstik.ml/" />
+        <meta property="og:image" content="https://media.discordapp.net/attachments/771821245292609556/837489485797261322/Untitled_5.png?width=452&height=452" />
+        <meta property="og:description" content="Youtuber, Student, Developer" />
+      </Head>
       <section className='main'>
         <div className="wrapper">
             <div className="None">
