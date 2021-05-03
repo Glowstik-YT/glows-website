@@ -2,9 +2,18 @@ import Head from 'next/head';
 import Image from "next/image";
 import styles from '../styles/Home.module.css';
 
+const string = '</.glow>'
+
 export default function lang() {
   return (
     <div>
+      <Head>
+        <meta property="og:title" content="Glow Download" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://glowstik.ml/glow" />
+        <meta property="og:image" content="https://media.discordapp.net/attachments/771821245292609556/837489485797261322/Untitled_5.png?width=452&height=452" />
+        <meta property="og:description" content="My own coding language I made (not the best)" />
+      </Head>
       <section className='main'>
         <div className='wrapper'>
           <center>
@@ -16,7 +25,7 @@ export default function lang() {
             <br />
             <br />
             <br />
-            <h1 className='title'>Download Glow</h1>
+            <h1 className='title'>{string}</h1>
             <a href="https://cdn.discordapp.com/attachments/830088075010637835/830516378851213332/Glow_Setup.exe">
               <button className="download" id='button'>Glow v1.0</button>
             </a>
@@ -83,7 +92,7 @@ export default function lang() {
           0 100px 80px rgba(0, 0, 0, 0.12)
         ;
           background-color: #fff;
-          color: #7e0eed  ;
+          color: #7e0eed;
           cursor: pointer;
         }
       `}</style>
