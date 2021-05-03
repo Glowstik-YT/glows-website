@@ -5,7 +5,7 @@ import SpotifyWebApi from "spotify-web-api-js";
 const s = new SpotifyWebApi();
 export default function dashboard() {
     const [token, setToken] = useState('');
-    const [userInfo, setUserInfo] = useState({ topArtists: [], currentTrack: []}, name: "" });
+    const [userInfo, setUserInfo] = useState({ topArtists: [], currentTrack: [], name: "" });
     useEffect(() => {
         const hash = getTokenFromResponse();
         window.location.hash = "";
