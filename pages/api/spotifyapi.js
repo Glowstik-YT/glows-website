@@ -4,7 +4,7 @@ import querystring from 'querystring';
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = "1fe3b63297394446a75e0ce9d6fda392";
-const redirectUri = "http://localhost:3001/spotify/dashboard/";
+const redirectUri = "http://glowstik.ml/spotify/dashboard/";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
