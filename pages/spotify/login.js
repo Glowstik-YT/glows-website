@@ -25,8 +25,16 @@ export default function lang() {
             <button>Go Back</button>
           </a>
         </div>
+        <center>
+          <p className="bold">We do NOT store any data from users!</p>
+        </center>
       </section>
       <style jsx>{`
+        .bold {
+          /* font-weight: bold; */
+          color: white;
+          text-decoration: underline;
+        }
         .wrapper {
           display: flex;
           justify-content: center;
