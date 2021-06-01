@@ -45,7 +45,7 @@ export default function Home() {
               <h1 className='abtTitle'>Projects</h1>
               <a href="/glow"><button className="lang" >.glow</button></a>
               <a href="/spotify/login" className="button" ><button className="glowify"  id='button'>Glowify</button></a>
-              <a href="/spotify/login" className="button" ><button className="glowsearch"  id='button'>Glow Search</button></a>
+              <a href="/search" className="button" ><button className="glowsearch"  id='button'>Glow Search</button></a>
           </div>
         </center>
       </section>
