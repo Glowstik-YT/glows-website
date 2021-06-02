@@ -50,7 +50,10 @@ export default function lang() {
   useEffect(() => {
     getTime();
     var d = new Date();
-    d = `${d.getMonth() + 1}/${d.getDay() + 30}/${d.getFullYear()}`
+    let dd = d.getDate();
+    let mm = d.getMonth()+1; 
+    let yyyy = d.getFullYear();
+    d = `${mm}/${dd}/${yyyy}`
     setDate(d);
   }, [])
 
