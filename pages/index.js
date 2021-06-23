@@ -24,7 +24,6 @@ export default function Home() {
             <a href="https://github.com/Glowstik-YT"><button className="git" id='button'>GitHub</button></a>
             <a href="https://youtube.com/Glowstik" className="button" ><button className="yt"  id='button'>Youtube</button></a>
             <a href="http://discord.gg/z2zfZMwemk" className="button" ><button className="discord"  id='button'>Discord</button></a>
-            
           </div>
         </div>
       </section>
@@ -46,6 +45,7 @@ export default function Home() {
               <a href="/glow"><button className="lang" >.glow</button></a>
               <a href="/spotify/login" className="button" ><button className="glowify"  id='button'>Glowify</button></a>
               <a href="/search" className="button" ><button className="glowsearch"  id='button'>Glow Search</button></a>
+              <a href="/sof" className="button" ><button className="glowdevsearch"  id='button'>Glow DEV Search</button></a>
           </div>
         </center>
       </section>
@@ -159,6 +159,29 @@ export default function Home() {
           0 100px 80px rgba(0, 0, 0, 0.12);
         background-color: #141414;
         color: #c471ed;
+        cursor: pointer;
+      }
+      .glowdevsearch{
+        border: 3px solid #141414;
+        background-color: #141414;
+        border-radius: 45px;
+        color: #00b3db;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        padding-left: 15px;
+        transition: 0.7s;
+      }
+      .glowdevsearch:hover{
+        box-shadow:
+          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
+        background-color: #141414;
+        color: #00b3db;
         cursor: pointer;
       }
       .lang{
