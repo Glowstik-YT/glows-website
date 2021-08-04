@@ -21,9 +21,9 @@ export default function Home() {
               <h1 className="Logo anim-typewriter">{string}</h1>        
             </div> 
           <div className='flex-box'>
-            <a href="https://github.com/Glowstik-YT"><button className="git" id='button'>GitHub</button></a>
-            <a href="https://youtube.com/Glowstik" className="button" ><button className="yt"  id='button'>Youtube</button></a>
-            <a href="http://discord.gg/z2zfZMwemk" className="button" ><button className="discord"  id='button'>Discord</button></a>
+            <a href="https://github.com/Glowstik-YT"><button className="git" id='button1'>GitHub</button></a>
+            <a href="https://youtube.com/Glowstik" className="button" ><button className="yt"  id='button1'>Youtube</button></a>
+            <a href="http://discord.gg/z2zfZMwemk" className="button" ><button className="discord"  id='button1'>Discord</button></a>
           </div>
         </div>
       </section>
@@ -35,14 +35,15 @@ export default function Home() {
       <center>
           <div className='abtContainer'>
               <h1 className="abtTitle">About Me</h1>
-              <p>Hi! I'm glowstik but most people refer to me as Glow, I am a Student, Developer, and Youtuber. I am currently proficant in 3 languages and 3 frameworks. Along with that I am learning 2 languages including Java and C++. My youtube channel currently has 300ish subscribers which to others is really not that much but to me it means a lot. I make videos on Discord Bot creation and am in the middle of creating a public bot right now called "Project Glow". If you want to know more about that you can always dm me on discord or shoot me an email. If you have business inquries be sure to email me and I will get back to you as soon as possible. Anyways thats all about me (mah lifes pretty boring). </p>
+              <pre><code>Hi! I'm glowstik but most people refer to me as Glow, I am a Student, Developer, and Youtuber. I am currently proficant in 3 languages and 3 frameworks. Along with that I am learning 2 languages including Java and C++. My youtube channel currently has 800ish subscribers which to others is really not that much but to me it means a lot. I make videos on Discord Bot creation and am in the middle of creating a public bot right now called "Project Glow". If you want to know more about that you can always dm me on discord or shoot me an email. If you have business inquries be sure to email me and I will get back to you as soon as possible. Anyways thats all about me (mah lifes pretty boring). </code></pre>
               <h3><strong>Contact Info</strong></h3>
               <p>Discord: <strong>{username}</strong></p>
           </div>
           <br />
+          <br />
           <div className='projectContainer'>
               <h1 className='abtTitle'>Projects</h1>
-              <a href="/glow"><button className="lang" >.glow</button></a>
+              <a href="/glow" className="button"><button className="lang" id='button'>.glow</button></a>
               <a href="/spotify/login" className="button" ><button className="glowify"  id='button'>Glowify</button></a>
               <a href="/search" className="button" ><button className="glowsearch"  id='button'>Glow Search</button></a>
               <a href="/sof" className="button" ><button className="glowdevsearch"  id='button'>Glow DEV Search</button></a>
@@ -51,7 +52,7 @@ export default function Home() {
       </section>
 
 
-      <style jsx>{`
+      <style jsx>{` 
       .flex-box {
         width: 75% !important;
         display: flex;
@@ -60,7 +61,6 @@ export default function Home() {
         flex-direction: row;
         flex-wrap: wrap;
       }
-
       .abtContainer {
         width: 75%;
         justify-content: center;
@@ -75,11 +75,24 @@ export default function Home() {
         font-size: 35px;
       }
       #button {
+        margin: 2%;
+      }
+      #button1 {
         margin-top: 65px;
       }
+      pre code {
+        display: block;
+        background: none;
+        white-space: pre;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
 
+        hight: 100px;
+        padding: 0;
+      }
       button {
         margin: 2px;
+        padding: 7px
       }
       .git{
         border: 3px solid #fff;
@@ -270,7 +283,7 @@ export default function Home() {
       }
       .Logo {
           margin-left: 20px;
-          font-size: 100px;
+          font-size: 150px;
           color: #fff;
           margin: 0 auto;
           border-right: 2px solid #fff;
@@ -302,7 +315,8 @@ export default function Home() {
         }
 
         #aboutMe {
-          height: 70vh;
+          height: 60vh;
+
         }
 
         .wrapper {
